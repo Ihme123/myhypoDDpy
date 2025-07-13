@@ -1,0 +1,375 @@
+Unpacking HypoDD archive ...
+Unpacking HypoDD archive done.
+Fixing 5 Makefiles to use gfortran...
+  Fixed: ph2dt/Makefile
+  Fixed: hista2ddsta/Makefile
+  Fixed: hypoDD/Makefile
+  Fixed: ncsn2pha/Makefile
+Makefile fixes completed.
+Compiling HypoDD ...
+for d in hypoDD ncsn2pha ph2dt hista2ddsta; do (cd $d; echo $d; make all); done
+hypoDD
+make[1]: Entering directory '/home/mihai/Documents/PhD/HypoDD/hypodd_working/hypodd_src/HYPODD/src/hypoDD'
+gfortran -I../../include -c hypoDD.f -o hypoDD.o
+hypoDD.f:654:29:
+
+  654 |      & f7.1,f7.1,f7.1,f7.1)'),xav,yav,zav,tav
+      |                             1
+Warning: Legacy Extension: Comma before i/o item list at (1)
+gfortran -I../../include -c aprod.f -o aprod.o
+gfortran -I../../include -c cluster1.f -o cluster1.o
+gfortran -I../../include -c covar.f -o covar.o
+gfortran -I../../include -c datum.f -o datum.o
+gfortran -I../../include -c delaz.f -o delaz.o
+gfortran -I../../include -c delaz2.f -o delaz2.o
+gfortran -I../../include -c direct1.f -o direct1.o
+gfortran -I../../include -c dist.f -o dist.o
+gfortran -I../../include -c dtres.f -o dtres.o
+gfortran -I../../include -c exist.f -o exist.o
+gfortran -I../../include -c freeunit.f -o freeunit.o
+gfortran -I../../include -c getdata.f -o getdata.o
+gfortran -I../../include -c getinp.f -o getinp.o
+gfortran -I../../include -c ifindi.f -o ifindi.o
+gfortran -I../../include -c indexxi.f -o indexxi.o
+gfortran -I../../include -c juliam.f -o juliam.o
+gfortran -I../../include -c lsfit_lsqr.f -o lsfit_lsqr.o
+gfortran -I../../include -c lsfit_svd.f -o lsfit_svd.o
+gfortran -I../../include -c lsqr.f -o lsqr.o
+gfortran -I../../include -c matmult1.f -o matmult1.o
+gfortran -I../../include -c matmult2.f -o matmult2.o
+gfortran -I../../include -c matmult3.f -o matmult3.o
+gfortran -I../../include -c mdian1.f -o mdian1.o
+gfortran -I../../include -c normlz.f -o normlz.o
+gfortran -I../../include -c partials.f -o partials.o
+gfortran -I../../include -c ran.f -o ran.o
+gfortran -I../../include -c redist.f -o redist.o
+gfortran -I../../include -c refract.f -o refract.o
+refract.f:84:16:
+
+   84 |       do 23151m=j1,nl
+      |                1
+Warning: Deleted feature: Start expression in DO loop at (1) must be integer
+refract.f:126:36:
+
+  126 |       xovmax=tinj(lx)*v(lx)*v(1)/(v(lx)-v(1))
+      |                                    1
+Warning: Legacy Extension: REAL array index at (1)
+refract.f:126:24:
+
+  126 |       xovmax=tinj(lx)*v(lx)*v(1)/(v(lx)-v(1))
+      |                        1
+Warning: Legacy Extension: REAL array index at (1)
+refract.f:126:18:
+
+  126 |       xovmax=tinj(lx)*v(lx)*v(1)/(v(lx)-v(1))
+      |                  1
+Warning: Legacy Extension: REAL array index at (1)
+refract.f:155:53:
+
+  155 |       xovmax=(tinj(lx)-tid(jx))*v(lx)*v(jx)/(v(lx)-v(jx))
+      |                                                     1
+Warning: Legacy Extension: REAL array index at (1)
+refract.f:155:47:
+
+  155 |       xovmax=(tinj(lx)-tid(jx))*v(lx)*v(jx)/(v(lx)-v(jx))
+      |                                               1
+Warning: Legacy Extension: REAL array index at (1)
+refract.f:155:40:
+
+  155 |       xovmax=(tinj(lx)-tid(jx))*v(lx)*v(jx)/(v(lx)-v(jx))
+      |                                        1
+Warning: Legacy Extension: REAL array index at (1)
+refract.f:155:34:
+
+  155 |       xovmax=(tinj(lx)-tid(jx))*v(lx)*v(jx)/(v(lx)-v(jx))
+      |                                  1
+Warning: Legacy Extension: REAL array index at (1)
+refract.f:155:27:
+
+  155 |       xovmax=(tinj(lx)-tid(jx))*v(lx)*v(jx)/(v(lx)-v(jx))
+      |                           1
+Warning: Legacy Extension: REAL array index at (1)
+refract.f:155:19:
+
+  155 |       xovmax=(tinj(lx)-tid(jx))*v(lx)*v(jx)/(v(lx)-v(jx))
+      |                   1
+Warning: Legacy Extension: REAL array index at (1)
+refract.f:161:36:
+
+  161 |       xovmax=tinj(lx)*v(lx)*v(1)/(v(lx)-v(1))
+      |                                    1
+Warning: Legacy Extension: REAL array index at (1)
+refract.f:161:24:
+
+  161 |       xovmax=tinj(lx)*v(lx)*v(1)/(v(lx)-v(1))
+      |                        1
+Warning: Legacy Extension: REAL array index at (1)
+refract.f:161:18:
+
+  161 |       xovmax=tinj(lx)*v(lx)*v(1)/(v(lx)-v(1))
+      |                  1
+Warning: Legacy Extension: REAL array index at (1)
+gfortran -I../../include -c resstat.f -o resstat.o
+gfortran -I../../include -c scopy.f -o scopy.o
+scopy.f:25:72:
+
+   25 |       if(incx.eq.incy) if(incx-1) 5,20,60
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: Arithmetic IF statement at (1)
+gfortran -I../../include -c sdc2.f -o sdc2.o
+gfortran -I../../include -c setorg.f -o setorg.o
+gfortran -I../../include -c skip.f -o skip.o
+gfortran -I../../include -c snrm2.f -o snrm2.o
+snrm2.f:67:72:
+
+   67 |    10 assign 30 to next
+      |                                                                        1
+Warning: Deleted feature: ASSIGN statement at (1)
+snrm2.f:72:19:
+
+   72 |    20    go to next,(30, 50, 70, 110)
+      |                   1
+Warning: Deleted feature: Assigned GOTO statement at (1)
+snrm2.f:74:72:
+
+   74 |       assign 50 to next
+      |                                                                        1
+Warning: Deleted feature: ASSIGN statement at (1)
+snrm2.f:83:72:
+
+   83 |       assign 70 to next
+      |                                                                        1
+Warning: Deleted feature: ASSIGN statement at (1)
+snrm2.f:89:72:
+
+   89 |       assign 110 to next
+      |                                                                        1
+Warning: Deleted feature: ASSIGN statement at (1)
+snrm2.f:125:72:
+
+  125 |    95    sum = sum + sx(j)**2
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 95 at (1)
+gfortran -I../../include -c sort.f -o sort.o
+gfortran -I../../include -c sorti.f -o sorti.o
+gfortran -I../../include -c sscal.f -o sscal.o
+gfortran -I../../include -c svd.f -o svd.o
+svd.f:49:72:
+
+   49 |       DO 1100 J=1,N
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: Shared DO termination label 1100 at (1)
+svd.f:50:72:
+
+   50 |  1100 U(I,J)=A(I,J)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 1100 at (1)
+svd.f:59:72:
+
+   59 |  2100 S=U(J,I)**2 + S
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 2100 at (1)
+svd.f:69:72:
+
+   69 |  2200 S=U(K,I)*U(K,J) + S
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 2200 at (1)
+svd.f:72:72:
+
+   72 |  2300 U(K,J)=U(K,J) + F*U(K,I)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 2300 at (1)
+svd.f:82:72:
+
+   82 |  2600 S=U(I,J)**2 + S
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 2600 at (1)
+svd.f:90:72:
+
+   90 |  2650 E(J)=U(I,J)/H
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 2650 at (1)
+svd.f:97:72:
+
+   97 |  2670 S=U(J,K)*U(I,K) + S
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 2670 at (1)
+svd.f:99:72:
+
+   99 |  2690 U(J,K)=U(J,K) + S*E(K)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 2690 at (1)
+svd.f:117:72:
+
+  117 |  3100 V(J,I)=U(I,J)/H
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 3100 at (1)
+svd.f:121:72:
+
+  121 |  3200 S=U(I,K)*V(K,J) + S
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 3200 at (1)
+svd.f:123:72:
+
+  123 |  3300 V(K,J)=V(K,J) + S*V(K,I)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 3300 at (1)
+svd.f:129:72:
+
+  129 |  3600 V(I,J)=0.0
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 3600 at (1)
+svd.f:145:72:
+
+  145 |  4100 U(I,J)=0.0
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 4100 at (1)
+svd.f:152:72:
+
+  152 |  4200 S=U(K,I)*U(K,J) + S
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 4200 at (1)
+svd.f:155:72:
+
+  155 |  4300 U(K,J)=U(K,J) + F*U(K,I)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 4300 at (1)
+svd.f:159:72:
+
+  159 |  4550 U(J,I)=U(J,I)/G
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 4550 at (1)
+svd.f:163:72:
+
+  163 |  4600 U(J,I)=0.0
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 4600 at (1)
+svd.f:164:72:
+
+  164 |  4700 U(I,I)=U(I,I) + 1.0
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 4700 at (1)
+svd.f:258:72:
+
+  258 |  8200 V(J,K)=-V(J,K)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 8200 at (1)
+gfortran -I../../include -c tiddid.f -o tiddid.o
+gfortran -I../../include -c trialsrc.f -o trialsrc.o
+gfortran -I../../include -c trimlen.f -o trimlen.o
+trimlen.f:11:72:
+
+   11 |     1    if(t(trimlen:trimlen).ne.' ')RETURN
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 1 at (1)
+gfortran -I../../include -c ttime.f -o ttime.o
+gfortran -I../../include -c vmodel.f -o vmodel.o
+vmodel.f:34:72:
+
+   34 |    10 vsq(i)=v(i)*v(i)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 10 at (1)
+vmodel.f:53:72:
+
+   53 |    30 thk(i)=top(i+1)-top(i)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 30 at (1)
+gfortran -I../../include -c weighting.f -o weighting.o
+gcc -O -I../../include   -c -o atoangle_.o atoangle_.c
+atoangle_.c:3:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+    3 | #endif lint
+      |        ^~~~
+In file included from atoangle_.c:6:
+../../include/f77types.h:10:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+   10 | #endif F77TYPES_H
+      |        ^~~~~~~~~~
+gcc -O -I../../include   -c -o atoangle.o atoangle.c
+atoangle.c:3:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+    3 | #endif lint
+      |        ^~~~
+atoangle.c:9:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+    9 | #endif NULL
+      |        ^~~~
+gcc -O -I../../include   -c -o datetime_.o datetime_.c
+In file included from datetime_.c:7:
+../../include/f77types.h:10:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+   10 | #endif F77TYPES_H
+      |        ^~~~~~~~~~
+gcc -O -I../../include   -c -o hypot_.o hypot_.c
+gcc -O -I../../include   -c -o rpad_.o rpad_.c
+In file included from rpad_.c:6:
+../../include/f77types.h:10:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+   10 | #endif F77TYPES_H
+      |        ^~~~~~~~~~
+gcc -O -I../../include   -c -o sscanf3_.o sscanf3_.c
+In file included from sscanf3_.c:7:
+../../include/f77types.h:10:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+   10 | #endif F77TYPES_H
+      |        ^~~~~~~~~~
+gfortran  hypoDD.o aprod.o cluster1.o covar.o datum.o delaz.o delaz2.o direct1.o dist.o dtres.o exist.o freeunit.o getdata.o getinp.o ifindi.o indexxi.o juliam.o lsfit_lsqr.o lsfit_svd.o lsqr.o matmult1.o matmult2.o matmult3.o mdian1.o normlz.o partials.o ran.o redist.o refract.o resstat.o scopy.o sdc2.o setorg.o skip.o snrm2.o sort.o sorti.o sscal.o svd.o tiddid.o trialsrc.o trimlen.o ttime.o vmodel.o weighting.o atoangle_.o atoangle.o datetime_.o hypot_.o rpad_.o sscanf3_.o  -o hypoDD
+make[1]: Leaving directory '/home/mihai/Documents/PhD/HypoDD/hypodd_working/hypodd_src/HYPODD/src/hypoDD'
+ncsn2pha
+make[1]: Entering directory '/home/mihai/Documents/PhD/HypoDD/hypodd_working/hypodd_src/HYPODD/src/ncsn2pha'
+gfortran -O -c ncsn2pha.f -o ncsn2pha.o
+ncsn2pha.f:279:72:
+
+  279 |     1    if(t(trimlen:trimlen).ne.' ')RETURN
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 1 at (1)
+ncsn2pha.f:62:0:
+
+   62 |       fn0= str30 (1:trimlen(str30))
+      | 
+Warning: ‘__builtin_memcpy’ reading 80 bytes from a region of size 30 [-Wstringop-overflow=]
+gfortran  ncsn2pha.o   -o ncsn2pha
+make[1]: Leaving directory '/home/mihai/Documents/PhD/HypoDD/hypodd_working/hypodd_src/HYPODD/src/ncsn2pha'
+ph2dt
+make[1]: Entering directory '/home/mihai/Documents/PhD/HypoDD/hypodd_working/hypodd_src/HYPODD/src/ph2dt'
+gfortran -O -I../../include -c ph2dt.f -o ph2dt.o
+gfortran -O -I../../include -c cluster.f -o cluster.o
+gfortran -O -I../../include -c datetime.f -o datetime.o
+gfortran -O -I../../include -c delaz.f -o delaz.o
+gfortran -O -I../../include -c ifindi.f -o ifindi.o
+gfortran -O -I../../include -c indexx.f -o indexx.o
+gfortran -O -I../../include -c indexxi.f -o indexxi.o
+gfortran -O -I../../include -c sorti.f -o sorti.o
+gfortran -O -I../../include -c trimlen.f -o trimlen.o
+trimlen.f:11:72:
+
+   11 |     1    if(t(trimlen:trimlen).ne.' ')RETURN
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 1 at (1)
+gcc -I../../include -O   -c -o atoangle_.o atoangle_.c
+atoangle_.c:3:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+    3 | #endif lint
+      |        ^~~~
+In file included from atoangle_.c:6:
+../../include/f77types.h:10:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+   10 | #endif F77TYPES_H
+      |        ^~~~~~~~~~
+gcc -I../../include -O   -c -o atoangle.o atoangle.c
+atoangle.c:3:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+    3 | #endif lint
+      |        ^~~~
+atoangle.c:9:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+    9 | #endif NULL
+      |        ^~~~
+gcc -I../../include -O   -c -o rpad_.o rpad_.c
+In file included from rpad_.c:6:
+../../include/f77types.h:10:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+   10 | #endif F77TYPES_H
+      |        ^~~~~~~~~~
+gcc -I../../include -O   -c -o sscanf3_.o sscanf3_.c
+In file included from sscanf3_.c:7:
+../../include/f77types.h:10:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+   10 | #endif F77TYPES_H
+      |        ^~~~~~~~~~
+gfortran  ph2dt.o cluster.o datetime.o delaz.o ifindi.o indexx.o indexxi.o sorti.o trimlen.o atoangle_.o atoangle.o rpad_.o sscanf3_.o  -o ph2dt
+make[1]: Leaving directory '/home/mihai/Documents/PhD/HypoDD/hypodd_working/hypodd_src/HYPODD/src/ph2dt'
+hista2ddsta
+make[1]: Entering directory '/home/mihai/Documents/PhD/HypoDD/hypodd_working/hypodd_src/HYPODD/src/hista2ddsta'
+f77 -O -I../../include -c hista2ddsta.f -o hista2ddsta.o
+f77  hista2ddsta.o  -o hista2ddsta
+make[1]: Leaving directory '/home/mihai/Documents/PhD/HypoDD/hypodd_working/hypodd_src/HYPODD/src/hista2ddsta'
+
+Compiling HypoDD done.

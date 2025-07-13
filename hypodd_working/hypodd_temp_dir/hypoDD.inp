@@ -1,0 +1,19 @@
+* hypoDD_2
+dt.cc
+dt.ct
+event.sel
+station.sel
+hypoDD.loc
+hypoDD.reloc
+hypoDD.sta
+hypoDD.res
+hypoDD.src
+3 3 200.0
+0 4 -999 -999 -999
+2 2 2
+100 1 0.5 -999 -999 0.1 0.05 -999 -999 30
+100 1 0.5 6 -999 0.1 0.05 6 -999 30
+5 1.73
+-46000.0 -30000.0 -25000.0 -5000.0 -0.0
+8.0 7.3 6.7 6.2 5.6
+0

@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.2">
+  <Source>SEISAN station file conversion</Source>
+  <Module>ObsPy 1.4.1</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2025-06-21T17:52:45.120020Z</Created>
+  <Network code="SI">
+    <Description>Converted from SEISAN station file</Description>
+    <Station code="620">
+      <Latitude unit="DEGREES">72.654</Latitude>
+      <Longitude unit="DEGREES">124.347</Longitude>
+      <Elevation unit="METERS">12000.0</Elevation>
+      <Site>
+        <Name>Station 620</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">72.654</Latitude>
+        <Longitude unit="DEGREES">124.347</Longitude>
+        <Elevation unit="METERS">12000.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+      </Channel>
+    </Station>
+    <Station code="621">
+      <Latitude unit="DEGREES">72.184</Latitude>
+      <Longitude unit="DEGREES">124.889</Longitude>
+      <Elevation unit="METERS">264000.0</Elevation>
+      <Site>
+        <Name>Station 621</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">72.184</Latitude>
+        <Longitude unit="DEGREES">124.889</Longitude>
+        <Elevation unit="METERS">264000.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+      </Channel>
+    </Station>
+    <Station code="622">
+      <Latitude unit="DEGREES">72.442</Latitude>
+      <Longitude unit="DEGREES">125.313</Longitude>
+      <Elevation unit="METERS">12000.0</Elevation>
+      <Site>
+        <Name>Station 622</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">72.442</Latitude>
+        <Longitude unit="DEGREES">125.313</Longitude>
+        <Elevation unit="METERS">12000.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+      </Channel>
+    </Station>
+    <Station code="623">
+      <Latitude unit="DEGREES">72.326</Latitude>
+      <Longitude unit="DEGREES">125.76</Longitude>
+      <Elevation unit="METERS">34000.0</Elevation>
+      <Site>
+        <Name>Station 623</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">72.326</Latitude>
+        <Longitude unit="DEGREES">125.76</Longitude>
+        <Elevation unit="METERS">34000.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+      </Channel>
+    </Station>
+    <Station code="624">
+      <Latitude unit="DEGREES">72.476</Latitude>
+      <Longitude unit="DEGREES">126.275</Longitude>
+      <Elevation unit="METERS">73000.0</Elevation>
+      <Site>
+        <Name>Station 624</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">72.476</Latitude>
+        <Longitude unit="DEGREES">126.275</Longitude>
+        <Elevation unit="METERS">73000.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+      </Channel>
+    </Station>
+    <Station code="625">
+      <Latitude unit="DEGREES">72.174</Latitude>
+      <Longitude unit="DEGREES">126.107</Longitude>
+      <Elevation unit="METERS">30000.0</Elevation>
+      <Site>
+        <Name>Station 625</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">72.174</Latitude>
+        <Longitude unit="DEGREES">126.107</Longitude>
+        <Elevation unit="METERS">30000.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+      </Channel>
+    </Station>
+    <Station code="626">
+      <Latitude unit="DEGREES">71.888</Latitude>
+      <Longitude unit="DEGREES">126.036</Longitude>
+      <Elevation unit="METERS">241000.0</Elevation>
+      <Site>
+        <Name>Station 626</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">71.888</Latitude>
+        <Longitude unit="DEGREES">126.036</Longitude>
+        <Elevation unit="METERS">241000.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+      </Channel>
+    </Station>
+    <Station code="627">
+      <Latitude unit="DEGREES">72.117</Latitude>
+      <Longitude unit="DEGREES">126.982</Longitude>
+      <Elevation unit="METERS">54000.0</Elevation>
+      <Site>
+        <Name>Station 627</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">72.117</Latitude>
+        <Longitude unit="DEGREES">126.982</Longitude>
+        <Elevation unit="METERS">54000.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+      </Channel>
+    </Station>
+    <Station code="628">
+      <Latitude unit="DEGREES">72.4</Latitude>
+      <Longitude unit="DEGREES">127.147</Longitude>
+      <Elevation unit="METERS">71000.0</Elevation>
+      <Site>
+        <Name>Station 628</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">72.4</Latitude>
+        <Longitude unit="DEGREES">127.147</Longitude>
+        <Elevation unit="METERS">71000.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+      </Channel>
+    </Station>
+    <Station code="629">
+      <Latitude unit="DEGREES">71.929</Latitude>
+      <Longitude unit="DEGREES">127.313</Longitude>
+      <Elevation unit="METERS">23000.0</Elevation>
+      <Site>
+        <Name>Station 629</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">71.929</Latitude>
+        <Longitude unit="DEGREES">127.313</Longitude>
+        <Elevation unit="METERS">23000.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+      </Channel>
+    </Station>
+    <Station code="630">
+      <Latitude unit="DEGREES">72.075</Latitude>
+      <Longitude unit="DEGREES">128.325</Longitude>
+      <Elevation unit="METERS">35000.0</Elevation>
+      <Site>
+        <Name>Station 630</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">72.075</Latitude>
+        <Longitude unit="DEGREES">128.325</Longitude>
+        <Elevation unit="METERS">35000.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+      </Channel>
+    </Station>
+    <Station code="631">
+      <Latitude unit="DEGREES">71.399</Latitude>
+      <Longitude unit="DEGREES">127.247</Longitude>
+      <Elevation unit="METERS">111000.0</Elevation>
+      <Site>
+        <Name>Station 631</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">71.399</Latitude>
+        <Longitude unit="DEGREES">127.247</Longitude>
+        <Elevation unit="METERS">111000.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+      </Channel>
+    </Station>
+    <Station code="632">
+      <Latitude unit="DEGREES">71.574</Latitude>
+      <Longitude unit="DEGREES">129.07283333333334</Longitude>
+      <Elevation unit="METERS">71000.0</Elevation>
+      <Site>
+        <Name>Station 632</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">71.574</Latitude>
+        <Longitude unit="DEGREES">129.07283333333334</Longitude>
+        <Elevation unit="METERS">71000.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>

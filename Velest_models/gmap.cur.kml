@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+  <Document>
+    <Style id="raypath">
+      <LineStyle>
+        <color>ff929292</color>
+        <width>   2.500</width>
+      </LineStyle>
+    </Style>
+    <LookAt>
+      <longitude> 125.726</longitude>
+      <latitude> 72.477</latitude>
+      <altitude>
+         2000000.00    
+      </altitude>
+      <altitudeMode>absolute</altitudeMode>
+    </LookAt>
+<!-- Current location: -->
+      <Placemark>
+        <visibility>1</visibility>
+        <Style>
+          <IconStyle>
+            <color>ff0000ff</color>
+            <colorMode>normal</colorMode>
+            <scale>  0.24</scale>
+            <Icon>
+              <href>
+                http://maps.google.com/mapfiles/kml/pal2/icon26.png                             
+              </href>
+            </Icon>
+          </IconStyle>
+        </Style>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <gx:drawOrder>1</gx:drawOrder>
+          <coordinates> 125.726, 72.477,1.0</coordinates>
+        </Point>
+      </Placemark>
+<!-- Error ellipse: -->
+      <Placemark>
+        <Style>
+          <LineStyle>
+                    <color>ff000000</color>
+             <width> 2.00</width>
+          </LineStyle>
+        </Style>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+126.016,72.5090,0.00
+126.008,72.5120,0.00
+125.997,72.5130,0.00
+125.981,72.5150,0.00
+125.961,72.5150,0.00
+125.937,72.5150,0.00
+125.910,72.5150,0.00
+125.881,72.5130,0.00
+125.848,72.5120,0.00
+125.814,72.5090,0.00
+125.778,72.5070,0.00
+125.742,72.5030,0.00
+125.705,72.5000,0.00
+125.669,72.4950,0.00
+125.633,72.4910,0.00
+125.599,72.4870,0.00
+125.567,72.4820,0.00
+125.538,72.4770,0.00
+125.511,72.4720,0.00
+125.488,72.4670,0.00
+125.469,72.4630,0.00
+125.453,72.4590,0.00
+125.442,72.4540,0.00
+125.436,72.4510,0.00
+125.434,72.4470,0.00
+125.437,72.4450,0.00
+125.444,72.4420,0.00
+125.455,72.4410,0.00
+125.471,72.4390,0.00
+125.491,72.4390,0.00
+125.515,72.4390,0.00
+125.542,72.4390,0.00
+125.572,72.4410,0.00
+125.604,72.4420,0.00
+125.638,72.4450,0.00
+125.674,72.4470,0.00
+125.710,72.4510,0.00
+125.747,72.4540,0.00
+125.783,72.4580,0.00
+125.818,72.4630,0.00
+125.852,72.4670,0.00
+125.884,72.4720,0.00
+125.914,72.4770,0.00
+125.940,72.4820,0.00
+125.964,72.4860,0.00
+125.983,72.4910,0.00
+125.998,72.4950,0.00
+126.009,72.4990,0.00
+126.016,72.5030,0.00
+126.018,72.5070,0.00
+126.016,72.5090,0.00
+          </coordinates>
+        </LineString>
+      </Placemark>
+<!-- OLD location: -->
+      <Placemark>
+        <visibility>1</visibility>
+        <Style>
+          <IconStyle>
+            <color>ffff0000</color>
+            <colorMode>normal</colorMode>
+            <scale>  0.24</scale>
+            <Icon>
+              <href>
+                http://maps.google.com/mapfiles/kml/pal2/icon26.png                             
+              </href>
+            </Icon>
+          </IconStyle>
+        </Style>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates> 125.791, 72.453,0.0</coordinates>
+        </Point>
+      </Placemark>
+<!-- Add station: -->
+      <Placemark>
+        <visibility>1</visibility>
+        <Style>
+          <IconStyle>
+            <color>ff00ff00</color>
+            <colorMode>normal</colorMode>
+            <scale>  1.10</scale>
+            <Icon>
+              <href>
+                http://maps.google.com/mapfiles/kml/shapes/triangle.png                         
+              </href>
+            </Icon>
+          </IconStyle>
+        </Style>
+        <description>
+                624  
+        </description>
+        <Point>
+          <coordinates> 126.275,  72.476,0,</coordinates>
+        </Point>
+      </Placemark>
+<!-- Add raypath: -->
+      <Placemark>
+        <styleUrl>#raypath</styleUrl>
+        <LineStyle>
+          <color>ff0000ff</color>
+          <width>2.5</width>
+        </LineStyle>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+125.726,72.4770,0.00
+126.275,72.4760,0.00
+          </coordinates>
+        </LineString>
+      </Placemark>
+<!-- Add station: -->
+      <Placemark>
+        <visibility>1</visibility>
+        <Style>
+          <IconStyle>
+            <color>ff00ff00</color>
+            <colorMode>normal</colorMode>
+            <scale>  1.10</scale>
+            <Icon>
+              <href>
+                http://maps.google.com/mapfiles/kml/shapes/triangle.png                         
+              </href>
+            </Icon>
+          </IconStyle>
+        </Style>
+        <description>
+                628  
+        </description>
+        <Point>
+          <coordinates> 127.147,  72.400,0,</coordinates>
+        </Point>
+      </Placemark>
+<!-- Add raypath: -->
+      <Placemark>
+        <styleUrl>#raypath</styleUrl>
+        <LineStyle>
+          <color>ff0000ff</color>
+          <width>2.5</width>
+        </LineStyle>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+125.726,72.4770,0.00
+127.147,72.4000,0.00
+          </coordinates>
+        </LineString>
+      </Placemark>
+<!-- Add station: -->
+      <Placemark>
+        <visibility>1</visibility>
+        <Style>
+          <IconStyle>
+            <color>ff00ff00</color>
+            <colorMode>normal</colorMode>
+            <scale>  1.10</scale>
+            <Icon>
+              <href>
+                http://maps.google.com/mapfiles/kml/shapes/triangle.png                         
+              </href>
+            </Icon>
+          </IconStyle>
+        </Style>
+        <description>
+                629  
+        </description>
+        <Point>
+          <coordinates> 127.313,  71.929,0,</coordinates>
+        </Point>
+      </Placemark>
+<!-- Add raypath: -->
+      <Placemark>
+        <styleUrl>#raypath</styleUrl>
+        <LineStyle>
+          <color>ff0000ff</color>
+          <width>2.5</width>
+        </LineStyle>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+125.726,72.4770,0.00
+127.313,71.9290,0.00
+          </coordinates>
+        </LineString>
+      </Placemark>
+  </Document>
+</kml>
