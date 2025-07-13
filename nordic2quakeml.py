@@ -37,8 +37,8 @@ def parse_event_header(lines):
         sec = sec_id
 
     try:
-    origin = datetime(yr, mo, dy, hr, mi, int(sec),
-                         int((sec - int(sec)) * 1e6))
+        origin = datetime(yr, mo, dy, hr, mi, int(sec),
+                            int((sec - int(sec)) * 1e6))
     except ValueError as e:
         print(f"ValueError in parse_event_header: {e}")
         print(f"Header line: {hdr if hdr else 'N/A'}")
