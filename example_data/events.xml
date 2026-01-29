@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quakeml xmlns="http://quakeml.org/xmlns/quakeml/1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://quakeml.org/xmlns/quakeml/1.2 http://quakeml.org/schema/quakeml-1.2.xsd">
+<eventParameters publicID="smi:local/eventParameters">
+  <event publicID="smi:local/event/2016080307365450">
+    <origin publicID="smi:local/origin/2016080307365450">
+      <time><value>2016-08-03T07:36:54.50Z</value></time>
+      <latitude><value>72.79</value></latitude>
+      <longitude><value>127.098</value></longitude>
+      <depth><value>10800</value></depth>
+      <creationInfo><agencyID>BER</agencyID></creationInfo>
+    </origin>
+    <magnitude publicID="smi:local/mag/2016080307365450/ML">
+      <mag><value>0.5</value></mag>
+      <type>ML</type>
+    </magnitude>
+    <pick publicID="smi:local/e1p1">
+      <time><value>2016-08-03T07:38:01.6Z</value></time>
+      <waveformID networkCode="SI" stationCode="628" channelCode="HHZ" />
+      <phaseHint>P</phaseHint>
+    </pick>
+    <pick publicID="smi:local/e1p2">
+      <time><value>2016-08-03T07:38:07.3Z</value></time>
+      <waveformID networkCode="SI" stationCode="628" channelCode="HHE" />
+      <phaseHint>S</phaseHint>
+    </pick>
+  </event>
+  <event publicID="smi:local/event/2016080512345670">
+    <origin publicID="smi:local/origin/2016080512345670">
+      <time><value>2016-08-05T12:34:56.70Z</value></time>
+      <latitude><value>72.65</value></latitude>
+      <longitude><value>126.89</value></longitude>
+      <depth><value>8500</value></depth>
+      <creationInfo><agencyID>BER</agencyID></creationInfo>
+    </origin>
+    <magnitude publicID="smi:local/mag/2016080512345670/ML">
+      <mag><value>1.2</value></mag>
+      <type>ML</type>
+    </magnitude>
+    <pick publicID="smi:local/e2p1">
+      <time><value>2016-08-05T12:35:10.2Z</value></time>
+      <waveformID networkCode="SI" stationCode="620" channelCode="HHZ" />
+      <phaseHint>P</phaseHint>
+    </pick>
+  </event>
+  <event publicID="smi:local/event/2016080615234510">
+    <origin publicID="smi:local/origin/2016080615234510">
+      <time><value>2016-08-06T15:23:45.10Z</value></time>
+      <latitude><value>72.45</value></latitude>
+      <longitude><value>127.25</value></longitude>
+      <depth><value>12000</value></depth>
+      <creationInfo><agencyID>BER</agencyID></creationInfo>
+    </origin>
+    <magnitude publicID="smi:local/mag/2016080615234510/ML">
+      <mag><value>0.8</value></mag>
+      <type>ML</type>
+    </magnitude>
+    <pick publicID="smi:local/e3p1">
+      <time><value>2016-08-06T15:24:02.5Z</value></time>
+      <waveformID networkCode="SI" stationCode="624" channelCode="HHZ" />
+      <phaseHint>P</phaseHint>
+    </pick>
+    <pick publicID="smi:local/e3p2">
+      <time><value>2016-08-06T15:24:10.1Z</value></time>
+      <waveformID networkCode="SI" stationCode="624" channelCode="HHE" />
+      <phaseHint>S</phaseHint>
+    </pick>
+  </event>
+  <event publicID="smi:local/event/2016080809123420">
+    <origin publicID="smi:local/origin/2016080809123420">
+      <time><value>2016-08-08T09:12:34.20Z</value></time>
+      <latitude><value>72.55</value></latitude>
+      <longitude><value>126.50</value></longitude>
+      <depth><value>9200</value></depth>
+      <creationInfo><agencyID>BER</agencyID></creationInfo>
+    </origin>
+    <magnitude publicID="smi:local/mag/2016080809123420/ML">
+      <mag><value>1.5</value></mag>
+      <type>ML</type>
+    </magnitude>
+    <pick publicID="smi:local/e4p1">
+      <time><value>2016-08-08T09:12:48.3Z</value></time>
+      <waveformID networkCode="SI" stationCode="625" channelCode="HHZ" />
+      <phaseHint>P</phaseHint>
+    </pick>
+  </event>
+  <event publicID="smi:local/event/2016081014562380">
+    <origin publicID="smi:local/origin/2016081014562380">
+      <time><value>2016-08-10T14:56:23.80Z</value></time>
+      <latitude><value>72.30</value></latitude>
+      <longitude><value>127.80</value></longitude>
+      <depth><value>15000</value></depth>
+      <creationInfo><agencyID>BER</agencyID></creationInfo>
+    </origin>
+    <magnitude publicID="smi:local/mag/2016081014562380/ML">
+      <mag><value>0.3</value></mag>
+      <type>ML</type>
+    </magnitude>
+    <pick publicID="smi:local/e5p1">
+      <time><value>2016-08-10T14:56:40.5Z</value></time>
+      <waveformID networkCode="SI" stationCode="623" channelCode="HHZ" />
+      <phaseHint>P</phaseHint>
+    </pick>
+    <pick publicID="smi:local/e5p2">
+      <time><value>2016-08-10T14:56:52.8Z</value></time>
+      <waveformID networkCode="SI" stationCode="623" channelCode="HHE" />
+      <phaseHint>S</phaseHint>
+    </pick>
+  </event>
+</eventParameters>
+</quakeml>

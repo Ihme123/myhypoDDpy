@@ -1,2 +1,25 @@
+# Data directories
 waveforms/
+hypodd_working/
+
+# Python cache
 __pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated files
+*.xml
+!example_data/*.xml
+*.log
+*.json
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+anaconda3/
+.env

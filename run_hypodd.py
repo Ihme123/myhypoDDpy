@@ -1,6 +1,6 @@
 import os
 import sys
-from setup_velocity_model import setup_hypodd_velocity_model
+from preprocessing.setup_velocity_model import setup_hypodd_velocity_model
 import os, logging, logging.handlers, pathlib
 import builtins
 import warnings

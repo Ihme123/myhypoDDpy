@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.2">
+  <Source>SEISAN station file conversion</Source>
+  <Module>ObsPy 1.4.1</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2025-06-21T17:52:45.120020Z</Created>
+  <Network code="SI">
+    <Description>Converted from SEISAN station file</Description>
+    <Station code="620">
+      <Latitude unit="DEGREES">72.654</Latitude>
+      <Longitude unit="DEGREES">124.347</Longitude>
+      <Elevation unit="METERS">12.0</Elevation>
+      <Site>
+        <Name>Station 620</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">72.654</Latitude>
+        <Longitude unit="DEGREES">124.347</Longitude>
+        <Elevation unit="METERS">12.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>
