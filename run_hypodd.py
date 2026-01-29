@@ -65,12 +65,12 @@ def main():
     
     # Add event files (QuakeML)
     print("\nAdding event files...")
-    relocator.add_event_files("hypoDD_quakeml_fixed.xml")
-    
+    relocator.add_event_files("example_data/events.xml")
+
     # Add station files (StationXML)
     print("Adding station files...")
-    relocator.add_station_files("stations.xml")
-    
+    relocator.add_station_files("example_data/stations.xml")
+
     # Add waveform files (mseed)
     print("Adding waveform files...")
     waveform_files = []
@@ -89,7 +89,7 @@ def main():
     
     # Setup velocity model
     print("\nSetting up velocity model...")
-    success = setup_hypodd_velocity_model(relocator, "STATION0.hyp", 1.73)
+    success = setup_hypodd_velocity_model(relocator, "example_data/STATION0.hyp", 1.73)
     if not success:
         print("Error setting up velocity model!")
         return
