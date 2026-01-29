@@ -10,7 +10,7 @@ import re
 
 # Базовый путь относительно расположения скрипта
 BASE_PATH = Path(__file__).parent / "example_data"
-
+print(f"BASE_PATH={BASE_PATH}")
 # Флаг для очистки рабочей директории перед запуском
 CLEAN_WORKDIR = False
 
@@ -116,9 +116,6 @@ def main():
     if waveform_files:
         relocator.add_waveform_files(waveform_files)
         print("Number of waveform files:", len(relocator.waveform_files))
-        for f in relocator.waveform_files:
-            if "2017-03-23-1612" in f and "622" in f:
-                print(">>> FOUND the 16-12 file in relocator.waveform_files:", f)
     else:
         print("Warning: No waveform files found!")
     
