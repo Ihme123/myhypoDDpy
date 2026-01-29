@@ -4,7 +4,7 @@ import glob
 from pathlib import Path
 
 # Базовый путь относительно расположения скрипта
-BASE_PATH = Path(__file__).parent.parent / "example_data"
+BASE_PATH = Path(__file__).parent.parent
 
 def copy_mseed_files(years=None):
     """
@@ -17,7 +17,7 @@ def copy_mseed_files(years=None):
     source_base = r"C:\Seismo\WAV\SPRC1"
     
     # Destination directory (create if it doesn't exist) - в корне проекта
-    dest_dir = BASE_PATH.parent / "waveforms"
+    dest_dir = BASE_PATH / "waveforms"
     if not os.path.exists(dest_dir):
         os.makedirs(dest_dir)
         print(f"Created directory: {dest_dir}")

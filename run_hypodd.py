@@ -9,7 +9,8 @@ import warnings
 import re
 
 # Базовый путь относительно расположения скрипта
-BASE_PATH = Path(__file__).parent / "example_data"
+BASE_PATH = Path(__file__).parent
+EXAMPLE_DATA = BASE_PATH / "example_data"
 
 # Флаг для очистки рабочей директории перед запуском
 CLEAN_WORKDIR = False
@@ -99,16 +100,16 @@ def main():
     
     # Add event files (QuakeML)
     print("\nAdding event files...")
-    relocator.add_event_files(str(BASE_PATH / "events.xml"))
+    relocator.add_event_files(str(EXAMPLE_DATA / "events.xml"))
 
     # Add station files (StationXML)
     print("Adding station files...")
-    relocator.add_station_files(str(BASE_PATH / "stations.xml"))
+    relocator.add_station_files(str(EXAMPLE_DATA / "stations.xml"))
 
     # Add waveform files (mseed)
     print("Adding waveform files...")
     waveform_files = []
-    waveforms_dir = Path(__file__).parent / "waveforms"
+    waveforms_dir = BASE_PATH / "waveforms"
     if waveforms_dir.exists():
         for file in os.listdir(waveforms_dir):
             waveform_files.append(str(waveforms_dir / file))
@@ -124,7 +125,7 @@ def main():
     
     # Setup velocity model
     print("\nSetting up velocity model...")
-    success = setup_hypodd_velocity_model(relocator, str(BASE_PATH / "STATION0.hyp"), 1.73)
+    success = setup_hypodd_velocity_model(relocator, str(EXAMPLE_DATA / "STATION0.hyp"), 1.73)
     if not success:
         print("Error setting up velocity model!")
         return
