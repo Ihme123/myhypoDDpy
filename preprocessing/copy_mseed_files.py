@@ -16,8 +16,8 @@ def copy_mseed_files(years=None):
     # Source directory
     source_base = r"C:\Seismo\WAV\SPRC1"
     
-    # Destination directory (create if it doesn't exist)
-    dest_dir = BASE_PATH / "waveforms"
+    # Destination directory (create if it doesn't exist) - в корне проекта
+    dest_dir = BASE_PATH.parent / "waveforms"
     if not os.path.exists(dest_dir):
         os.makedirs(dest_dir)
         print(f"Created directory: {dest_dir}")

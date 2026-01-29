@@ -108,7 +108,7 @@ def main():
     # Add waveform files (mseed)
     print("Adding waveform files...")
     waveform_files = []
-    waveforms_dir = BASE_PATH / "waveforms"
+    waveforms_dir = Path(__file__).parent / "waveforms"
     if waveforms_dir.exists():
         for file in os.listdir(waveforms_dir):
             waveform_files.append(str(waveforms_dir / file))
