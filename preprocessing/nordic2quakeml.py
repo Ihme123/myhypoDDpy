@@ -21,8 +21,8 @@ from datetime import datetime, timedelta
 import xml.etree.ElementTree as ET
 
 
-INPUT_FILE = 'hyp.out'
-OUTPUT_FILE = 'hypoDD_quakeml.xml'
+INPUT_FILE = 'example_data/hyp.out'
+OUTPUT_FILE = 'example_data/events.xml'
 
 
 

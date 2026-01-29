@@ -32,4 +32,4 @@ def filter_events(input_file, output_file):
     print(f"Filtered catalog saved as: {output_file}")
 
 if __name__ == "__main__":
-    filter_events("hypoDD_quakeml_fixed.xml", "hypoDD_quakeml_filtered.xml") 
+    filter_events("example_data/events.xml", "example_data/events_filtered.xml") 

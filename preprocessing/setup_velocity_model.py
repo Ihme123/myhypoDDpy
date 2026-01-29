@@ -1,4 +1,4 @@
-def extract_velocity_model_from_station_hyp(filename="STATION0.hyp"):
+def extract_velocity_model_from_station_hyp(filename="example_data/STATION0.hyp"):
     """
     Extract velocity model from SEISAN station file
     Returns layer_tops list for HypoDD
@@ -27,7 +27,7 @@ def extract_velocity_model_from_station_hyp(filename="STATION0.hyp"):
     
     return layer_tops
 
-def setup_hypodd_velocity_model(relocator, station_file="STATION0.hyp", vp_vs_ratio=1.73):
+def setup_hypodd_velocity_model(relocator, station_file="example_data/STATION0.hyp", vp_vs_ratio=1.73):
     """
     Setup velocity model for HypoDD from SEISAN station file
     """

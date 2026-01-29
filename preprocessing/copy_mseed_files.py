@@ -14,7 +14,7 @@ def copy_mseed_files(years=None):
     source_base = r"C:\Seismo\WAV\SPRC1"
     
     # Destination directory (create if it doesn't exist)
-    dest_dir = "waveforms"
+    dest_dir = "example_data/waveforms"
     if not os.path.exists(dest_dir):
         os.makedirs(dest_dir)
         print(f"Created directory: {dest_dir}")

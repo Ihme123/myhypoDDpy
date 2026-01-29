@@ -23,4 +23,4 @@ def fix_quakeml(input_file, output_file):
     print(f"Fixed QuakeML file saved as: {output_file}")
 
 if __name__ == "__main__":
-    fix_quakeml("hypoDD_quakeml.xml", "hypoDD_quakeml_fixed.xml") 
+    fix_quakeml("example_data/events.xml", "example_data/events_fixed.xml") 

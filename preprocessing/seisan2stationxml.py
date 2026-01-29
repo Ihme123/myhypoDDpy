@@ -112,8 +112,8 @@ def convert_seisan_to_stationxml(input_file, output_file):
     return inv
 
 def main():
-    input_file = "STATION0.hyp"
-    output_file = "stations.xml"
+    input_file = "example_data/STATION0.hyp"
+    output_file = "example_data/stations.xml"
     
     try:
         inv = convert_seisan_to_stationxml(input_file, output_file)
