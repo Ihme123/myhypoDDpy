@@ -1,10 +1,17 @@
-def extract_velocity_model_from_station_hyp(filename="example_data/STATION0.hyp"):
+from pathlib import Path
+
+# Базовый путь относительно расположения скрипта
+BASE_PATH = Path(__file__).parent.parent / "example_data"
+
+def extract_velocity_model_from_station_hyp(filename=None):
     """
     Extract velocity model from SEISAN station file
     Returns layer_tops list for HypoDD
     """
+    if filename is None:
+        filename = BASE_PATH / "STATION0.hyp"
     layer_tops = []
-    
+
     with open(filename, 'r') as f:
         lines = f.readlines()
     
@@ -27,12 +34,14 @@ def extract_velocity_model_from_station_hyp(filename="example_data/STATION0.hyp"
     
     return layer_tops
 
-def setup_hypodd_velocity_model(relocator, station_file="example_data/STATION0.hyp", vp_vs_ratio=1.73):
+def setup_hypodd_velocity_model(relocator, station_file=None, vp_vs_ratio=1.73):
     """
     Setup velocity model for HypoDD from SEISAN station file
     """
+    if station_file is None:
+        station_file = BASE_PATH / "STATION0.hyp"
     print("Extracting velocity model from SEISAN station file...")
-    
+
     # Extract velocity model
     layer_tops = extract_velocity_model_from_station_hyp(station_file)
     

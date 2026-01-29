@@ -1,10 +1,14 @@
 import os
 import sys
+from pathlib import Path
 from preprocessing.setup_velocity_model import setup_hypodd_velocity_model
-import os, logging, logging.handlers, pathlib
+import logging, logging.handlers
 import builtins
 import warnings
 import re
+
+# Базовый путь относительно расположения скрипта
+BASE_PATH = Path(__file__).parent / "example_data"
 
 # Add the hypoDDpy directory to the path
 sys.path.append('./hypoDDpy')
@@ -18,7 +22,7 @@ warnings.filterwarnings(
 )
 
 working_dir = "hypodd_working"             # whatever you pass to HypoDDRelocator
-logfile = pathlib.Path(working_dir) / "hypodd_debug.log"
+logfile = Path(working_dir) / "hypodd_debug.log"
 
 logging.basicConfig(          # this sets the *root* logger
     level=logging.DEBUG,      # capture everything – DEBUG, INFO, …
@@ -65,18 +69,19 @@ def main():
     
     # Add event files (QuakeML)
     print("\nAdding event files...")
-    relocator.add_event_files("example_data/events.xml")
+    relocator.add_event_files(str(BASE_PATH / "events.xml"))
 
     # Add station files (StationXML)
     print("Adding station files...")
-    relocator.add_station_files("example_data/stations.xml")
+    relocator.add_station_files(str(BASE_PATH / "stations.xml"))
 
     # Add waveform files (mseed)
     print("Adding waveform files...")
     waveform_files = []
-    if os.path.exists("waveforms"):
-        for file in os.listdir("waveforms"):
-            waveform_files.append(os.path.join("waveforms", file))
+    waveforms_dir = BASE_PATH / "waveforms"
+    if waveforms_dir.exists():
+        for file in os.listdir(waveforms_dir):
+            waveform_files.append(str(waveforms_dir / file))
     
     if waveform_files:
         relocator.add_waveform_files(waveform_files)
@@ -89,7 +94,7 @@ def main():
     
     # Setup velocity model
     print("\nSetting up velocity model...")
-    success = setup_hypodd_velocity_model(relocator, "example_data/STATION0.hyp", 1.73)
+    success = setup_hypodd_velocity_model(relocator, str(BASE_PATH / "STATION0.hyp"), 1.73)
     if not success:
         print("Error setting up velocity model!")
         return

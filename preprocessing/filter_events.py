@@ -2,7 +2,11 @@
 """
 Script to filter out events without picks from QuakeML file
 """
+from pathlib import Path
 from obspy import read_events
+
+# Базовый путь относительно расположения скрипта
+BASE_PATH = Path(__file__).parent.parent / "example_data"
 
 def filter_events(input_file, output_file):
     """
@@ -32,4 +36,4 @@ def filter_events(input_file, output_file):
     print(f"Filtered catalog saved as: {output_file}")
 
 if __name__ == "__main__":
-    filter_events("example_data/events.xml", "example_data/events_filtered.xml") 
+    filter_events(BASE_PATH / "events.xml", BASE_PATH / "events_filtered.xml") 

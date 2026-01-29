@@ -1,7 +1,11 @@
 import re
+from pathlib import Path
 from obspy.core.inventory import Inventory, Network, Station, Channel, Site
 from obspy.core.inventory.util import Equipment
 import xml.etree.ElementTree as ET
+
+# Базовый путь относительно расположения скрипта
+BASE_PATH = Path(__file__).parent.parent / "example_data"
 
 def parse_seisan_coordinates(coord_str):
     """
@@ -112,8 +116,8 @@ def convert_seisan_to_stationxml(input_file, output_file):
     return inv
 
 def main():
-    input_file = "example_data/STATION0.hyp"
-    output_file = "example_data/stations.xml"
+    input_file = BASE_PATH / "STATION0.hyp"
+    output_file = BASE_PATH / "stations.xml"
     
     try:
         inv = convert_seisan_to_stationxml(input_file, output_file)

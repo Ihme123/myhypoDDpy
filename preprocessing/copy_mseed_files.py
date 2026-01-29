@@ -3,6 +3,9 @@ import shutil
 import glob
 from pathlib import Path
 
+# Базовый путь относительно расположения скрипта
+BASE_PATH = Path(__file__).parent.parent / "example_data"
+
 def copy_mseed_files(years=None):
     """
     Copy mseed files from SEISAN directory to HypoDD working directory
@@ -14,7 +17,7 @@ def copy_mseed_files(years=None):
     source_base = r"C:\Seismo\WAV\SPRC1"
     
     # Destination directory (create if it doesn't exist)
-    dest_dir = "example_data/waveforms"
+    dest_dir = BASE_PATH / "waveforms"
     if not os.path.exists(dest_dir):
         os.makedirs(dest_dir)
         print(f"Created directory: {dest_dir}")

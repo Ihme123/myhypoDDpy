@@ -3,6 +3,10 @@
 Script to fix QuakeML file by removing namespace prefixes
 """
 import re
+from pathlib import Path
+
+# Базовый путь относительно расположения скрипта
+BASE_PATH = Path(__file__).parent.parent / "example_data"
 
 def fix_quakeml(input_file, output_file):
     """
@@ -23,4 +27,4 @@ def fix_quakeml(input_file, output_file):
     print(f"Fixed QuakeML file saved as: {output_file}")
 
 if __name__ == "__main__":
-    fix_quakeml("example_data/events.xml", "example_data/events_fixed.xml") 
+    fix_quakeml(BASE_PATH / "events.xml", BASE_PATH / "events_fixed.xml") 

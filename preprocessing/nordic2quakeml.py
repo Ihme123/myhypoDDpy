@@ -18,11 +18,14 @@ Output
 """
 import re
 from datetime import datetime, timedelta
+from pathlib import Path
 import xml.etree.ElementTree as ET
 
+# Базовый путь относительно расположения скрипта
+BASE_PATH = Path(__file__).parent.parent / "example_data"
 
-INPUT_FILE = 'example_data/hyp.out'
-OUTPUT_FILE = 'example_data/events.xml'
+INPUT_FILE = BASE_PATH / 'hyp.out'
+OUTPUT_FILE = BASE_PATH / 'events.xml'
 
 
 
