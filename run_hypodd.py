@@ -1,5 +1,6 @@
 import os
 import sys
+import shutil
 from pathlib import Path
 from preprocessing.setup_velocity_model import setup_hypodd_velocity_model
 import logging, logging.handlers
@@ -9,6 +10,9 @@ import re
 
 # Базовый путь относительно расположения скрипта
 BASE_PATH = Path(__file__).parent / "example_data"
+
+# Флаг для очистки рабочей директории перед запуском
+CLEAN_WORKDIR = False
 
 # Add the hypoDDpy directory to the path
 sys.path.append('./hypoDDpy')
@@ -22,35 +26,61 @@ warnings.filterwarnings(
 )
 
 working_dir = "hypodd_working"             # whatever you pass to HypoDDRelocator
-logfile = Path(working_dir) / "hypodd_debug.log"
 
-logging.basicConfig(          # this sets the *root* logger
-    level=logging.DEBUG,      # capture everything – DEBUG, INFO, …
-    handlers=[
-        logging.handlers.RotatingFileHandler(
-            logfile, maxBytes=50_000_000, backupCount=3  # ~50 MB × 3 files
-        ),
-        logging.StreamHandler()   # still see the coloured “>>> …” lines
-    ],
-    format="%(asctime)s  %(levelname)-8s  %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S",
-)
+
+def delete_hypoddworking(workdir: str = working_dir) -> None:
+    """Очистить рабочую директорию HypoDD."""
+    workdir_path = Path(workdir)
+    if workdir_path.exists():
+        shutil.rmtree(workdir_path)
+        print(f"Рабочая директория '{workdir}' очищена")
+    workdir_path.mkdir(parents=True, exist_ok=True)
+
+
+def setup_logging(workdir: str = working_dir) -> None:
+    """Настройка логирования."""
+    logfile = Path(workdir) / "hypodd_debug.log"
+
+    # Файловый handler - пишет всё (DEBUG и выше)
+    file_handler = logging.handlers.RotatingFileHandler(
+        logfile, maxBytes=50_000_000, backupCount=3
+    )
+    file_handler.setLevel(logging.DEBUG)
+
+    # Консольный handler - только INFO и выше (без DEBUG)
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.INFO)
+
+    logging.basicConfig(
+        level=logging.DEBUG,
+        handlers=[file_handler, console_handler],
+        format="%(asctime)s  %(levelname)-8s  %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    )
+
+
 old_print = builtins.print
 def print_and_log(*args, **kwargs):
     message = " ".join(str(a) for a in args)
-    logging.debug(message)    # goes to the file
-    old_print(*args, **kwargs)  # still shows in terminal
+    logging.debug(message)
+    old_print(*args, **kwargs)
 builtins.print = print_and_log
 
 def main():
     """
     Complete HypoDD setup and run script
     """
+    # Очистка рабочей директории если нужно
+    if CLEAN_WORKDIR:
+        delete_hypoddworking(working_dir)
+    else:
+        Path(working_dir).mkdir(parents=True, exist_ok=True)
+
+    # Настройка логирования
+    setup_logging(working_dir)
+
     print("HypoDD Earthquake Relocation Setup")
     print("=" * 50)
-    
-    # Working directory for HypoDD
-    working_dir = "hypodd_working"
     
     # Initialize HypoDD relocator
     print("Initializing HypoDD relocator...")
